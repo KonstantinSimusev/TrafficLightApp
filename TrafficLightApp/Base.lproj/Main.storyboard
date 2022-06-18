@@ -16,32 +16,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="crP-iU-tWy">
-                                <rect key="frame" x="110" y="30" width="100" height="358"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ErB-Ig-hEo" userLabel="Red Light">
-                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
-                                        <color key="backgroundColor" systemColor="systemRedColor"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kRE-n8-fT7" userLabel="Yellow Light">
-                                        <rect key="frame" x="0.0" y="129" width="100" height="100"/>
-                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fzf-bG-yjH" userLabel="Green Light">
-                                        <rect key="frame" x="0.0" y="258" width="100" height="100"/>
-                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                    </view>
-                                </subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ErB-Ig-hEo" userLabel="Red Light">
+                                <rect key="frame" x="110" y="50" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="crP-iU-tWy" secondAttribute="height" multiplier="50:179" id="kRN-OA-wtt"/>
+                                    <constraint firstAttribute="width" secondItem="ErB-Ig-hEo" secondAttribute="height" multiplier="1:1" id="5vT-59-z0D"/>
                                 </constraints>
-                            </stackView>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kRE-n8-fT7" userLabel="Yellow Light">
+                                <rect key="frame" x="110" y="179" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="kRE-n8-fT7" secondAttribute="height" multiplier="1:1" id="dI6-g4-aJL"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fzf-bG-yjH" userLabel="Green Light">
+                                <rect key="frame" x="110" y="308" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Fzf-bG-yjH" secondAttribute="height" multiplier="1:1" id="uT2-qK-767"/>
+                                </constraints>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oiz-2U-9Vs" userLabel="Start Button">
-                                <rect key="frame" x="100" y="466" width="120" height="42"/>
+                                <rect key="frame" x="80" y="470" width="160" height="48"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="Oiz-2U-9Vs" secondAttribute="height" multiplier="20:7" id="AmM-XS-r6i"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="CtQ-pM-qwi"/>
+                                    <constraint firstAttribute="width" secondItem="Oiz-2U-9Vs" secondAttribute="height" multiplier="10:3" id="L5g-bm-7xX"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="ueG-v5-h0c"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -55,12 +56,18 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Oiz-2U-9Vs" secondAttribute="bottom" constant="60" id="A8E-Ra-fiM"/>
-                            <constraint firstItem="Oiz-2U-9Vs" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="15:71" id="Gab-S7-PCk"/>
-                            <constraint firstItem="Oiz-2U-9Vs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LNp-nY-q74"/>
-                            <constraint firstItem="crP-iU-tWy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="hUT-zG-L9u"/>
-                            <constraint firstItem="crP-iU-tWy" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="25:142" id="x1c-bW-HJI"/>
-                            <constraint firstItem="crP-iU-tWy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yGu-xJ-2cu"/>
+                            <constraint firstItem="Fzf-bG-yjH" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="25:142" id="2Bv-at-YEA"/>
+                            <constraint firstItem="ErB-Ig-hEo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="2JV-C9-AEL"/>
+                            <constraint firstItem="Fzf-bG-yjH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2ST-sU-ThZ"/>
+                            <constraint firstItem="Oiz-2U-9Vs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3gz-8A-fYv"/>
+                            <constraint firstItem="kRE-n8-fT7" firstAttribute="top" secondItem="ErB-Ig-hEo" secondAttribute="bottom" constant="29" id="5WF-Zw-PoQ"/>
+                            <constraint firstItem="kRE-n8-fT7" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="25:142" id="6vY-Ho-1gR"/>
+                            <constraint firstItem="Oiz-2U-9Vs" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="20:71" id="BHZ-tV-Td0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Oiz-2U-9Vs" secondAttribute="bottom" constant="50" id="PwD-n4-PDf"/>
+                            <constraint firstItem="kRE-n8-fT7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a7Y-pd-1IG"/>
+                            <constraint firstItem="ErB-Ig-hEo" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="25:142" id="gRM-D8-AYK"/>
+                            <constraint firstItem="Fzf-bG-yjH" firstAttribute="top" secondItem="kRE-n8-fT7" secondAttribute="bottom" constant="29" id="xDl-qY-s3g"/>
+                            <constraint firstItem="ErB-Ig-hEo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xuE-ri-n8c"/>
                         </constraints>
                     </view>
                     <connections>

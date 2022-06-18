@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        startButton.layer.cornerRadius = 15
+        startButton.layer.cornerRadius = 20
         
         redLight.alpha = lightIsOff
         yellowLight.alpha = lightIsOff
@@ -60,7 +60,5 @@ class ViewController: UIViewController {
             currentLight = .red
         }
     }
-    
-    
 }
 
